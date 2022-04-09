@@ -1,0 +1,116 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local ItemsRequired = Instance.new("TextLabel")
+local Items = Instance.new("TextLabel")
+local Execute = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Cancel = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui.VHubCoreScreen
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame.Position = UDim2.new(0.240644649, 0, 0.113297626, 0)
+Frame.Size = UDim2.new(0, 245, 0, 238)
+Frame.Active = true
+Frame.Draggable = true
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Size = UDim2.new(0, 50, 0, 50)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=8036184551"
+
+UICorner.Parent = Frame
+
+ItemsRequired.Name = "ItemsRequired"
+ItemsRequired.Parent = Frame
+ItemsRequired.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ItemsRequired.BackgroundTransparency = 1.000
+ItemsRequired.Position = UDim2.new(0.20408164, 0, 0.0420168079, 0)
+ItemsRequired.Size = UDim2.new(0, 150, 0, 30)
+ItemsRequired.Font = Enum.Font.Gotham
+ItemsRequired.Text = "Items Required:"
+ItemsRequired.TextColor3 = Color3.fromRGB(255, 255, 255)
+ItemsRequired.TextScaled = true
+ItemsRequired.TextSize = 14.000
+ItemsRequired.TextWrapped = true
+
+Items.Name = "Items"
+Items.Parent = Frame
+Items.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Items.BackgroundTransparency = 1.000
+Items.Position = UDim2.new(0.0897959173, 0, 0.210084036, 0)
+Items.Size = UDim2.new(0, 200, 0, 62)
+Items.Font = Enum.Font.Gotham
+Items.Text = "Chestnut Bun, Red Roblox Cap, Jade Necklace with Shell Pendant, Ice Brain, ROBLOX Girl - Hair, Old Town Cowboy Hat - Lil Nas X, Lavender Updo, Pal Hair."
+Items.TextColor3 = Color3.fromRGB(255, 255, 255)
+Items.TextScaled = true
+Items.TextSize = 14.000
+Items.TextWrapped = true
+
+Execute.Name = "Execute"
+Execute.Parent = Frame
+Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute.Position = UDim2.new(0.0897959173, 0, 0.779617786, 0)
+Execute.Size = UDim2.new(0, 200, 0, 31)
+Execute.Font = Enum.Font.Gotham
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextScaled = true
+Execute.TextSize = 14.000
+Execute.TextWrapped = true
+Execute.MouseButton1Down:connect(function()
+Frame:Destroy()
+game.CoreGui.VHubCoreScreen.DragScreen.DragFrame.Visible = true
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/VHub%20Home%20Page'),true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Obfuscatetestloluwu/Scripts/main/Giant%20Gun"))()
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Giant Gun!";
+	Icon = "rbxthumb://type=Asset&id=8036184560&w=150&h=150"})
+Duration = 16;
+
+wait(3)
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice!";
+	Text = "If You Can't Move, You May Need A Keyboard.";
+	Icon = "rbxthumb://type=Asset&id=8036184560&w=150&h=150"})
+Duration = 16;
+end)
+
+UICorner_2.Parent = Execute
+
+Cancel.Name = "Cancel"
+Cancel.Parent = Frame
+Cancel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cancel.Position = UDim2.new(0.0897959173, 0, 0.579617786, 0)
+Cancel.Size = UDim2.new(0, 200, 0, 31)
+Cancel.Font = Enum.Font.Gotham
+Cancel.Text = "Cancel"
+Cancel.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cancel.TextScaled = true
+Cancel.TextSize = 14.000
+Cancel.TextWrapped = true
+Cancel.MouseButton1Down:connect(function()
+Frame:Destroy()
+game.CoreGui.VHubCoreScreen.DragScreen.DragFrame.Visible = true
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/VHub%20Home%20Page'),true))()
+end)
+
+UICorner_3.Parent = Cancel
