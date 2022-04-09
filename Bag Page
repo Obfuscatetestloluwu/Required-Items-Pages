@@ -77,7 +77,7 @@ Execute.MouseButton1Down:connect(function()
 Frame:Destroy()
 game.CoreGui.VHubCoreScreen.DragScreen.DragFrame.Visible = true
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/VHub%20Home%20Page'),true))()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Sofjskdkkco/Roblox-scripts/main/Bag'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/Scripts/main/Bag'),true))()
 loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
