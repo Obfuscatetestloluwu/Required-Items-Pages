@@ -16,7 +16,7 @@ local UICorner_3 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui.VHubCoreScreen
+ScreenGui.Parent = game:GetService("CoreGui").VHubCoreScreen
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
 
@@ -32,7 +32,7 @@ ImageLabel.Parent = Frame
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.Size = UDim2.new(0, 50, 0, 50)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=8036184551"
+ImageLabel.Image = "http://www.roblox.com/asset/?id=9408318893"
 
 UICorner.Parent = Frame
 
@@ -42,7 +42,7 @@ ItemsRequired.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ItemsRequired.BackgroundTransparency = 1.000
 ItemsRequired.Position = UDim2.new(0.20408164, 0, 0.0420168079, 0)
 ItemsRequired.Size = UDim2.new(0, 150, 0, 30)
-ItemsRequired.Font = Enum.Font.Gotham
+ItemsRequired.Font = Enum.Font.GothamSemibold
 ItemsRequired.Text = "Items Required:"
 ItemsRequired.TextColor3 = Color3.fromRGB(255, 255, 255)
 ItemsRequired.TextScaled = true
@@ -59,7 +59,7 @@ Items.Font = Enum.Font.Gotham
 Items.Text = "Vector Arrow, Fan Hand Sign - Why Don't We."
 Items.TextColor3 = Color3.fromRGB(255, 255, 255)
 Items.TextScaled = true
-Items.TextSize = 14.000
+Items.TextSize = 13.000
 Items.TextWrapped = true
 
 Execute.Name = "Execute"
@@ -81,7 +81,7 @@ loadstring(game:HttpGet(('https://pastebin.com/raw/9SN6aibG'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Copter!";
-	Icon = "rbxthumb://type=Asset&id=8036184560&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
 Duration = 16;
 
 loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
