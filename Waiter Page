@@ -43,7 +43,7 @@ ItemsRequired.BackgroundTransparency = 1.000
 ItemsRequired.Position = UDim2.new(0.20408164, 0, 0.0420168079, 0)
 ItemsRequired.Size = UDim2.new(0, 150, 0, 30)
 ItemsRequired.Font = Enum.Font.GothamSemibold
-ItemsRequired.Text = "Items Required:"
+ItemsRequired.Text = "Error"
 ItemsRequired.TextColor3 = Color3.fromRGB(255, 255, 255)
 ItemsRequired.TextScaled = true
 ItemsRequired.TextSize = 14.000
@@ -56,7 +56,7 @@ Items.BackgroundTransparency = 1.000
 Items.Position = UDim2.new(0.0897959173, 0, 0.210084036, 0)
 Items.Size = UDim2.new(0, 200, 0, 62)
 Items.Font = Enum.Font.Gotham
-Items.Text = "Dessert Plate Hat."
+Items.Text = "This script has been removed ;("
 Items.TextColor3 = Color3.fromRGB(255, 255, 255)
 Items.TextScaled = true
 Items.TextSize = 13.000
@@ -68,29 +68,13 @@ Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Execute.Position = UDim2.new(0.0897959173, 0, 0.779617786, 0)
 Execute.Size = UDim2.new(0, 200, 0, 31)
 Execute.Font = Enum.Font.Gotham
-Execute.Text = "Execute"
+Execute.Text = "Removed"
 Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute.TextScaled = true
 Execute.TextSize = 14.000
 Execute.TextWrapped = true
 Execute.MouseButton1Down:connect(function()
-Frame:Destroy()
-game.CoreGui.VHubCoreScreen.DragScreen.DragFrame.Visible = true
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/VHub%20Home%20Page'),true))()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/Scripts/main/Waiter'),true))()
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "Script:";
-	Text = "Successfully Executed Waiter!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
-Duration = 16;
-wait(3)
-
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "Notice!";
-	Text = "If You Can't Move, You May Need A Keyboard.";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
-Duration = 16;
-loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+print("retar")
 end)
 
 UICorner_2.Parent = Execute
